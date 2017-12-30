@@ -21,6 +21,7 @@ function getOSinfo() {
 }
 
 module.exports = getOSinfo;
+module.exports = changeTime;
 
 function changeTime(){
     var time = os.uptime();

@@ -1,4 +1,5 @@
-var OSinfo = require('../modules/OSInfo');
+var getOSinfo = require('../modules/OSInfo');
+var changeTime = require('../modules/OSInfo');
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
@@ -18,6 +19,7 @@ process.stdin.on('readable', function() {
                 break;
             case '/changeTime':
                 changeTime();
+                break;
             default:
                 process.stderr.write('Wrong instruction!\n');
         };
